@@ -1,4 +1,6 @@
 Venetos::Application.routes.draw do
+  get "items/index"
+
   resources :items
   resources :sections
 
