@@ -1,2 +1,43 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<div id="index">
+        <div class="slider-wrapper theme-dark">
+            <div id="slider" class="nivoSlider">
+                <img src="/assets/image_one.JPG" data-thumb="/assets/image_one.JPG" alt="" />
+                <img src="/assets/image_two.JPG" data-thumb="/assets/image_two.JPG" alt="" />
+                <img src="/assets/image_three.JPG" data-thumb="/assets/image_three.JPG" alt="" />
+                <img src="/assets/image_four.JPG" data-thumb="/assets/image_four.JPG" alt="" />
+            </div>
+        </div>
+
+    <script type="text/javascript">
+		$(window).load(function() {
+		        $('#slider').nivoSlider({
+			        effect: 'random', // Specify sets like: 'fold,fade,sliceDown'
+			        slices: 10, // For slice animations
+			        animSpeed: 350, // Slide transition speed
+			        pauseTime: 5000, // How long each slide will show
+				});
+		    });
+
+	</script>
+
+	<div id="gray">
+
+		<div id="hours">
+			<h1> Restaurant Hours </h1>
+			<div class="container">
+
+				<div class="dinner">
+					<h3> Monday </h3><span> 5:00 PM - 9:00 PM </span>
+					<h3> Tuesday - Thursday </h3><span> 11:00 AM - 2:00 PM </span> <span> 5:00 PM - 10:00 PM </span>
+					<h3> Friday </h3><span> 11:00 AM - 2:00 PM </span><span> 5:00 PM - 11:00 PM </span>
+					<h3> Saturday </h3><span> 5:00 PM - 11:00 PM </span>
+					<h3> Sunday </h3><span> 4:30 PM - 9:00 PM </span>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<br class="clear" />
+
+</div>
+

@@ -1,2 +1,137 @@
-<h1>Welcome#dinner</h1>
-<p>Find me in app/views/welcome/dinner.html.erb</p>
+<div id="menu">
+	<div class="title"> 
+		<h1>Menu</h1> 
+	</div>
+
+	<ul id="navi">
+		<li> 
+			 <a style="float: left;" href="/welcome/lunch"> Lunch </a>
+			 <a class="selected" style="float: left;margin-left: 175px;"href="/welcome/dinner"> Dinner </a>
+			 <a style="float: right;" href="/welcome/drinks"> Drinks </a>
+			 <a style="float: right;margin-right: 175px;"href="/welcome/wine"> Wine </a> 			 
+			 <div class="menu_garnish one"> </div> <div class="menu_garnish two"> </div> <div class="menu_garnish three"> </div>
+		</li>
+	</ul>
+	<div class="items">
+		<h2>Per Incominciari</h2>
+		<span class="name">Antipasto for Two</span><span class="price">15</span>
+		<div class="desc">
+			A sampler of imported Italian meats and cheeses.  Hot and sweet soppressata, prosciutto, Italian olives and marinated artichokes.
+		</div>
+		<span class="name">Eggplant Fritters</span><span class="price">10</span>
+		<div class="desc">
+			Roasted eggplant, cheese, herbs, and bread crumbs served panfried with a spicy yogurt sauce.
+		</div>
+		<span class="name">Bruschetta</span><span class="price">7</span>
+		<div class="desc">
+			Toasted Italian bread with basil infused oil, sliced plum tomatoes, fresh mozzarella & fresh basil.
+		</div>
+		<span class="name">Prosciutto Wrap</span><span class="price">10</span>
+		<div class="desc">
+			Fresh mozzarella wrapped in sliced prosciutto warmed in the oven with olive oil & served over greens.
+		</div>
+		<span class="name">Risotto Balls</span><span class="price">12</span>
+		<div class="desc">
+			Chef's choice of the day.
+		</div>
+
+		<h2 style="margin-top: 2em;">Insalata</h2>
+		<span class="name">Veneto Green Salad</span><span class="price">S 5, L 8</span>
+		<div class="desc">
+			Mixed greens with asiago cheese, tomatoes, olives, house balsamic vinaigrette.
+		</div>
+		<span class="name">Spinach Salad</span><span class="price">S 7, L 13</span>
+		<div class="desc">
+			Fresh baby spinach with prosciutto, walnuts, kalamata olives, tomatoes, artichookes, feta cheese & our house oregano vinaigrette.
+		</div>
+		<span class="name">Grilled Chicken Salad</span><span class="price">12</span>
+		<div class="desc">
+			Mixed greens topped with marinated & grilled chicken breast, asiago cheese, tomato, roasted red peppers, artichoke hearts, kalamata olives, house oregano vinaigrette.
+		</div>
+		<span class="name">Steak Salad</span><span class="price">15</span>
+		<div class="desc">
+			Mixed greens topped with grilled black angus sirloin, red onion, tomato & gorgonzola cheese, house creamy horseradish dressing.
+		</div>
+		<span class="name">Caesar Salad</span><span class="price">S 7, L 10</span>
+		<div class="desc">
+			Topped with asiago cheese & croutons.
+		</div>
+
+		<!-- DINNER PIZZA -->
+
+		<h2 style="margin-top: 2em;">Wood-Fired Pizza</h2>
+		<p style="color: #dd7010;font-size: .75em;text-align:center;margin-top: -2em;margin-bottom:3.5em;">The Veneto oven bakes with wood in the olde world tradition. Each 11" pizza is worked by hand using dough and sauces made fresh in our kitchen.</p>
+		<span class="name">Veneto Margherita</span><span class="price">10</span>
+		<div class="desc">
+			Pomodoro sauce & mozzarella cheese.
+		</div>
+		<span class="name">Rustica</span><span class="price">12</span>
+		<div class="desc">
+			Pomodoro sauce topped with Italian sausage, green peppers, caramelized onions & mozzarella cheese.
+		</div>
+		<span class="name">Greek</span><span class="price">13</span>
+		<div class="desc">
+			Pesto sauce topped with spinach, kalamata olives, caramelized onions, artichoke hearts, feta & mozzarella cheese.
+		</div>
+		<span class="name">Pollo</span><span class="price">12</span>
+		<div class="desc">
+			Basil infused oil topped with chicken breast, tomato, artichoke hearts & mozzarella cheese.  Sprinkled with fresh basil and pesto sauce.
+		</div>
+		<span class="name">Bianca</span><span class="price">13</span>
+		<div class="desc">
+			Oregano infused oil topped with prosciutto, artichoke hearts, caramelized onions & mozzarella cheese.
+		</div>
+		<span class="name">Shrimp Puttanesca</span><span class="price">14</span>
+		<div class="desc">
+			Pomodoro sauce topped with shrimp, caramelized onions, olives, capers, anchovy filets, red pepper flakes & mozzarella cheese.
+		</div>
+		<span class="name">Mushroom</span><span class="price">13</span>
+		<div class="desc">
+			Oregano infused oil topped with wood-oven roasted mushrooms, mozzarella, provolone & Lively Run goat cheese.  Drizzled with truffle oil.
+		</div>
+		<span class="name">Three Cheese White</span><span class="price">12</span>
+		<div class="desc">
+			Italian spiced garlic infused oil, Asiago, mozzarella, & fontinella cheese with sliced tomatoes.
+		</div>
+
+		<!-- PASTA/ENTREES -->
+
+		<h2 style="margin-top: 2em;">Pasta/Entrees</h2>
+		<span class="name">Aglio e Olio</span><span class="price">11</span>
+		<div class="desc">
+			Angel hair pasta tossed with olive oil, garlic, red pepper flakes, basil & parsley.  Add: chicken 3; shrimp 2.
+		</div>
+		<span class="name">Prosciutto & Peas Alfredo</span><span class="price">15</span>
+		<div class="desc">
+			Farfalle pasta, prosciutto & peas in a parmesan cream sauce.
+		</div>
+		<span class="name">Vodka Cream Sauce</span><span class="price">15</span>
+		<div class="desc">
+			Farfalle pasta, fresh herbs & garlic in a house made marinara cream sauce.
+		</div>
+		<span class="name">Sautéed Shrimp</span><span class="price">18</span>
+		<div class="desc">
+			Sauteed shrimp over angel hair pasta with caramelized onions, diced plum tomatoes, garlic & fresh herbs in a light white wine brandy lemon sauce.
+		</div>
+		<span class="name">Venetian Chicken</span><span class="price">15</span>
+		<div class="desc">
+			Fettuccine, grilled sliced chicken, spinach, roasted red peppers, fresh herbs in a white wine lemon butter sauce.
+		</div>
+		<span class="name">Rustica</span><span class="price">15</span>
+		<div class="desc">
+			Fettuccine, Italian sausage, green bell peppers, caramelized onions, fresh herbs, house marinara, mozzarella cheese, topped with asiago cheese.
+		</div>
+		<span class="name">Lasagna</span><span class="price">14</span>
+		<div class="desc">
+			Five cheeses with house marinara.
+		</div>
+		<span class="name">Pasta con Funghi</span><span class="price">17</span>
+		<div class="desc">
+			Fettuccine with roasted wild mushrooms, garlic, shallots, fresh herbs, spinach in a light truffle cream sauce or light truffle broth.  Topped with Lively Run goat cheese.
+		</div>
+		<span class="name">Homemade Ricotta Gnocchi</span><span class="price">15</span>
+		<div class="desc">
+			Choice of sauce.
+		</div>
+	</div>
+</div>
