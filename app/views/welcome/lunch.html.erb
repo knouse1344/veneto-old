@@ -7,140 +7,150 @@
 			<h1> Menu </h1>
 		</div>
 
-		<ul id="navi">
-			<li> 
-				 <a class="selected" style="float: left;" href="/welcome/lunch"> Lunch </a>
-				 <a style="float: left;margin-left: 175px;"href="/welcome/dinner"> Dinner </a>
-				 <a style="float: right;" href="/welcome/drinks"> Drinks </a>
-				 <a style="float: right;margin-right: 175px;"href="/welcome/wine"> Wine </a> 			 
-				 <div class="menu_garnish one"> </div> <div class="menu_garnish two"> </div> <div class="menu_garnish three"> </div>
-			</li>
-		</ul>
+		<div id="navi">
+			 <a class="selected" href="/welcome/lunch"> Lunch </a>
+			 <a style="margin-left: 160px;" href="/welcome/dinner"> Dinner </a>
+			 <a style="margin-left: 160px;" href="/welcome/drinks"> Drinks </a>
+			 <a style="margin-left: 160px;" href="/welcome/wine"> Wine </a> 			 
+			 <div class="menu_garnish one"> </div> <div class="menu_garnish two"> </div> <div class="menu_garnish three"> </div>
+		</div>
+		</br class="clear">
 	</div>
 
 	<div class="bord_bot"> </div>
-	<h2><%= @perin.name %></h2>
-	<%= render @itemp %>
 
-	<h2><%= @insal.name %></h2>
-	<%= render @itemi %>	
+	<div class="bord_top"> </div>
 
-	<h2><%= @pizza.name %></h2>
-	<%= render @item_pizza %>	
+	<div class="bord_middle">
+		<div id="inner">
 
-	<h2><%= @pasta.name %></h2>
-	<%= render @item_pasta %>	
+		<h2><%= @perin.name %></h2>
+		<%= render @itemp %>
 
-<!-- 
-	<h2>Sandwiches</h2>
-	<p style="color: #dd7010;font-size: .75em;text-align:center;margin-top: -2em;margin-bottom:3.5em;">All sandwiches include a side salad.</p>
-	<span class="name">Eggplant Parmesan</span><span class="price">11</span>
-	<div class="desc">
-		Thinly sliced and breaded, baked with marinara sauce and topped with mozzarella served on ciabatta bread.
-	</div>
-	<span class="name">Chicken Caesar Wrap</span><span class="price">11</span>
-	<div class="desc">
-		Grilled chicken with romaine, asiago, parmesan homemade Caesar dressing, served in a sundried tomato wrap.
-	</div>
-	<span class="name">Grilled Veggie Wrap</span><span class="price">11</span>
-	<div class="desc">
-		Made with eggplant, zucchini, squash, goat cheese and pesto on a sundried tomato tortilla.
-	</div>
-	<span class="name">Grilled Chicken BLT Sandwich</span><span class="price">11</span>
-	<div class="desc">
-		Served on ciabatta bread with bacon, lettuce, tomato and mayo.
-	</div>
-	<span class="name">Turkey Melt</span><span class="price">11</span>
-	<div class="desc">
-		Turkey, bacon, cheddar cheese and homemade Italian dressing, served on ciabatta bread.
-	</div>
-	<span class="name">In-house Ground Ribeye Burger</span><span class="price">11</span>
-	<div class="desc">
-		Served with lettuce, tomato, red onion, and your choice of cheese on a ciabatta bun with a side of french fries.
-	</div>
+		<h2><%= @insal.name %></h2>
+		<%= render @itemi %>	
 
+		<h2><%= @pizza.name %></h2>
+		<%= render @item_pizza %>	
 
-	<h2 style="margin-top: 2em;">Wood-Fired Pizza</h2>
-	<span class="name">Veneto Margherita</span><span class="price">9</span>
-	<div class="desc">
-		Pomodoro sauce & mozzarella cheese.  Add basil for 1.00.
-	</div>
-	<span class="name">Rustica</span><span class="price">11</span>
-	<div class="desc">
-		Pomodoro sauce topped with Italian sausage, green peppers, caramelized onions & mozzarella cheese.
-	</div>
-	<span class="name">Greek</span><span class="price">12</span>
-	<div class="desc">
-		Pesto sauce topped with spinach, kalamata olives, caramelized onions, artichoke hearts, feta & mozzarella cheese.
-	</div>
-	<span class="name">Pollo</span><span class="price">12</span>
-	<div class="desc">
-		Basil infused oil topped with chicken breast, tomato, artichoke hearts & mozzarella cheese.  Sprinkled with fresh basil and pesto sauce.
-	</div>
-	<span class="name">Bianca</span><span class="price">12</span>
-	<div class="desc">
-		Oregano infused oil topped with prosciutto, artichoke hearts, caramelized onions & mozzarella cheese.
-	</div>
-	<span class="name">Shrimp Puttanesca</span><span class="price">13</span>
-	<div class="desc">
-		Pomodoro sauce topped with shrimp, caramelized onions, olives, capers, anchovy filets, red pepper flakes & mozzarella cheese.
-	</div>
-	<span class="name">Mushroom</span><span class="price">13</span>
-	<div class="desc">
-		Oregano infused oil topped with wood-oven roasted mushrooms, mozzarella, provolone & Lively Run goat cheese.  Drizzled with truffle oil.
-	</div>
-	<span class="name">Three Cheese White</span><span class="price">12</span>
-	<div class="desc">
-		Italian spiced garlic infused oil, asiago, mozzarella, & fontinella cheese with sliced tomatoes.
-	</div>
+		<h2><%= @pasta.name %></h2>
+		<%= render @item_pasta %>	
+
+	<!-- 
+		<h2>Sandwiches</h2>
+		<p style="color: #dd7010;font-size: .75em;text-align:center;margin-top: -2em;margin-bottom:3.5em;">All sandwiches include a side salad.</p>
+		<span class="name">Eggplant Parmesan</span><span class="price">11</span>
+		<div class="desc">
+			Thinly sliced and breaded, baked with marinara sauce and topped with mozzarella served on ciabatta bread.
+		</div>
+		<span class="name">Chicken Caesar Wrap</span><span class="price">11</span>
+		<div class="desc">
+			Grilled chicken with romaine, asiago, parmesan homemade Caesar dressing, served in a sundried tomato wrap.
+		</div>
+		<span class="name">Grilled Veggie Wrap</span><span class="price">11</span>
+		<div class="desc">
+			Made with eggplant, zucchini, squash, goat cheese and pesto on a sundried tomato tortilla.
+		</div>
+		<span class="name">Grilled Chicken BLT Sandwich</span><span class="price">11</span>
+		<div class="desc">
+			Served on ciabatta bread with bacon, lettuce, tomato and mayo.
+		</div>
+		<span class="name">Turkey Melt</span><span class="price">11</span>
+		<div class="desc">
+			Turkey, bacon, cheddar cheese and homemade Italian dressing, served on ciabatta bread.
+		</div>
+		<span class="name">In-house Ground Ribeye Burger</span><span class="price">11</span>
+		<div class="desc">
+			Served with lettuce, tomato, red onion, and your choice of cheese on a ciabatta bun with a side of french fries.
+		</div>
 
 
-	<h2 style="margin-top:2em;">Pasta/Entrees</h2>
-	<span class="name">Aglio e Olio</span><span class="price">10</span>
-	<div class="desc">
-		Angel hair pasta tossed with olive oil, garlic, red pepper flakes, basil & parsley.
-	</div>
-	<span class="name">Prosciutto & Peas Alfredo</span><span class="price">12</span>
-	<div class="desc">
-		Farfalle pasta, prosciutto & peas in a parmesan cream sauce.
-	</div>
-	<span class="name">Vodka Cream Sauce</span><span class="price">12</span>
-	<div class="desc">
-		Farfalle pasta, fresh herbs & garlic in San Marzano tomato cream sauce.
-	</div>
-	<span class="name">Sautéed Shrimp</span><span class="price">13</span>
-	<div class="desc">
-		Sauteed shrimp over angel hair pasta with caramelized onions, diced plum tomatoes, garlic & fresh herbs in a light white wine brandy lemon sauce.
-	</div>
-	<span class="name">Venetian Chicken</span><span class="price">12</span>
-	<div class="desc">
-		Fettuccine, grilled sliced chicken, spinach, roasted red peppers, fresh herbs in a white wine lemon butter sauce.
-	</div>
-	<span class="name">Rustica</span><span class="price">12</span>
-	<div class="desc">
-		Fettuccine, Italian sausage, green bell peppers, caramelized onions, fresh herbs, house marinara, mozzarella cheese, topped with asiago cheese.
-	</div>
-	<span class="name">Lasagna</span><span class="price">11</span>
-	<div class="desc">
-		Five cheeses with San Marzano tomato sauce.
-	</div>
-	<span class="name">Pasta con Funghi</span><span class="price">13</span>
-	<div class="desc">
-		Fettuccine with roasted shiitake, portabello & button mushrooms, garlic, shallots, fresh herbs, spinach in a light truffle cream sauce or light truffle broth.  Topped with Lively Run goat cheese.
-	</div>
-	<span class="name">Homemade Ricotta Gnocchi</span><span class="price">13</span>
-	<div class="desc">
-		Choice of sauce.
-	</div>
-	<span class="name">House Made Bolognese</span><span class="price">13.95</span>
-	<div class="desc">
-		Served with homemade pasta of the day and finished with fresh pecorino romano cheese.
-	</div>
-	<span class="name">Extras</span><span class="price">1.25 ea.</span>
-	<div class="desc">
-		Pepperoni, mushrooms, roasted red peppers, hot cherry peppers, green peppers, artichoke hearts, olives, tomatoes, red onions, ricotta cheese, blue cheese, feta cheese, goat cheese, caramelized onions, capers, anchovies, sausage, prosciutto.</br></br>Chicken and Shrimp 2.00 ea.
-	</div> -->
+		<h2 style="margin-top: 2em;">Wood-Fired Pizza</h2>
+		<span class="name">Veneto Margherita</span><span class="price">9</span>
+		<div class="desc">
+			Pomodoro sauce & mozzarella cheese.  Add basil for 1.00.
+		</div>
+		<span class="name">Rustica</span><span class="price">11</span>
+		<div class="desc">
+			Pomodoro sauce topped with Italian sausage, green peppers, caramelized onions & mozzarella cheese.
+		</div>
+		<span class="name">Greek</span><span class="price">12</span>
+		<div class="desc">
+			Pesto sauce topped with spinach, kalamata olives, caramelized onions, artichoke hearts, feta & mozzarella cheese.
+		</div>
+		<span class="name">Pollo</span><span class="price">12</span>
+		<div class="desc">
+			Basil infused oil topped with chicken breast, tomato, artichoke hearts & mozzarella cheese.  Sprinkled with fresh basil and pesto sauce.
+		</div>
+		<span class="name">Bianca</span><span class="price">12</span>
+		<div class="desc">
+			Oregano infused oil topped with prosciutto, artichoke hearts, caramelized onions & mozzarella cheese.
+		</div>
+		<span class="name">Shrimp Puttanesca</span><span class="price">13</span>
+		<div class="desc">
+			Pomodoro sauce topped with shrimp, caramelized onions, olives, capers, anchovy filets, red pepper flakes & mozzarella cheese.
+		</div>
+		<span class="name">Mushroom</span><span class="price">13</span>
+		<div class="desc">
+			Oregano infused oil topped with wood-oven roasted mushrooms, mozzarella, provolone & Lively Run goat cheese.  Drizzled with truffle oil.
+		</div>
+		<span class="name">Three Cheese White</span><span class="price">12</span>
+		<div class="desc">
+			Italian spiced garlic infused oil, asiago, mozzarella, & fontinella cheese with sliced tomatoes.
+		</div>
 
-	<br class="clear" />
+
+		<h2 style="margin-top:2em;">Pasta/Entrees</h2>
+		<span class="name">Aglio e Olio</span><span class="price">10</span>
+		<div class="desc">
+			Angel hair pasta tossed with olive oil, garlic, red pepper flakes, basil & parsley.
+		</div>
+		<span class="name">Prosciutto & Peas Alfredo</span><span class="price">12</span>
+		<div class="desc">
+			Farfalle pasta, prosciutto & peas in a parmesan cream sauce.
+		</div>
+		<span class="name">Vodka Cream Sauce</span><span class="price">12</span>
+		<div class="desc">
+			Farfalle pasta, fresh herbs & garlic in San Marzano tomato cream sauce.
+		</div>
+		<span class="name">Sautéed Shrimp</span><span class="price">13</span>
+		<div class="desc">
+			Sauteed shrimp over angel hair pasta with caramelized onions, diced plum tomatoes, garlic & fresh herbs in a light white wine brandy lemon sauce.
+		</div>
+		<span class="name">Venetian Chicken</span><span class="price">12</span>
+		<div class="desc">
+			Fettuccine, grilled sliced chicken, spinach, roasted red peppers, fresh herbs in a white wine lemon butter sauce.
+		</div>
+		<span class="name">Rustica</span><span class="price">12</span>
+		<div class="desc">
+			Fettuccine, Italian sausage, green bell peppers, caramelized onions, fresh herbs, house marinara, mozzarella cheese, topped with asiago cheese.
+		</div>
+		<span class="name">Lasagna</span><span class="price">11</span>
+		<div class="desc">
+			Five cheeses with San Marzano tomato sauce.
+		</div>
+		<span class="name">Pasta con Funghi</span><span class="price">13</span>
+		<div class="desc">
+			Fettuccine with roasted shiitake, portabello & button mushrooms, garlic, shallots, fresh herbs, spinach in a light truffle cream sauce or light truffle broth.  Topped with Lively Run goat cheese.
+		</div>
+		<span class="name">Homemade Ricotta Gnocchi</span><span class="price">13</span>
+		<div class="desc">
+			Choice of sauce.
+		</div>
+		<span class="name">House Made Bolognese</span><span class="price">13.95</span>
+		<div class="desc">
+			Served with homemade pasta of the day and finished with fresh pecorino romano cheese.
+		</div>
+		<span class="name">Extras</span><span class="price">1.25 ea.</span>
+		<div class="desc">
+			Pepperoni, mushrooms, roasted red peppers, hot cherry peppers, green peppers, artichoke hearts, olives, tomatoes, red onions, ricotta cheese, blue cheese, feta cheese, goat cheese, caramelized onions, capers, anchovies, sausage, prosciutto.</br></br>Chicken and Shrimp 2.00 ea.
+		</div> -->
+
+		</br class="clear">
+		</div>
+	</div>
+
+	<div class="bord_bot"> </div>
+
 
 </div>
