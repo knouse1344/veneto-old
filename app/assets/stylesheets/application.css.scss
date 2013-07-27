@@ -41,41 +41,27 @@ body {
 		position: fixed;
 		top: 0px;
 		width: 100%;
-		height: 127px;
+		height:208px;
 		color: #fafafa;
-		background: url('/assets/header_wood.png') repeat-x;
+		background: url('/assets/header_repeat.png') repeat-x;
 		white-space: nowrap;
 
 		.logo {
-			margin-top: 25px;
-			width: 441px;
-			height: 74px;
+			width: 872px;
+			height: 207px;
 			margin-left: auto;
 			margin-right: auto;
 
 			img {
-				width: 441px;
+				width: 872px;
 			}
-		}
-
-		.left_end {
-			display: inline-block;
-			width: 34px;
-			height: 41px;
-			margin-left: 335px;
-			margin-top: 25px;
-			background: url('/assets/lend.png');
 		}
 		
 		#navibar {
-			height: 73px;
-			margin-top: 20px;
-			margin-left: -4px;
-			padding-top: 21px;
-			background: url('/assets/header_navibar.png') repeat-x;
+			margin-top: -45px;
 
 			.links {
-				width: 800px;
+				width: 900px;
 				margin-left: auto;
 				margin-right: auto;
 				text-transform: uppercase;
