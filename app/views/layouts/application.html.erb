@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Venetos</title>
+  <title>Veneto Restaurant</title>
+  <link href='http://fonts.googleapis.com/css?family=Marck+Script|Parisienne|Junge' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
 
-<%= yield %>
+	<body>
+		<div id="main_contain">
+			<div id="header">
 
-</body>
+				<div class="logo"><a href="/welcome/index"><img src="/assets/header_logo.png" /></a></div>
+				
+				<div id="navibar">
+
+					<div class="links">
+						<a href="/welcome/contact"> CONTACT  </a>
+						<a href="/welcome/events" style="margin-right: 130px;"> EVENTS/PARTIES </a>
+						<a href="/welcome/about" style="margin-right: 130px;"> ABOUT </a>
+						<a href="/welcome/lunch" style="margin-right: 130px;"> MENU </a>
+					</div>
+				</div>
+			</div>
+
+			<div id="page">
+				<div class="box">
+					<%= yield %>
+				</div>
+			</div>
+
+			<div id="footer">
+				<div class="wrapper">
+
+					<div class="something">
+						<h3> Follow us </h3>
+					</div>
+					<div class="contact">
+						Veneto Restaurant © 2013.  All Rights Reserved.
+					</div>
+					<div class="address">
+						<h3> Find us </h3>
+						318 East Avenue</br>Rochester, NY 14607</br>585 454 5444</br>veneto@frontier.com
+					</div>
+
+				</div>
+			</div>
+			<br class="clear" />
+		</div>
+	</body>
+
 </html>
