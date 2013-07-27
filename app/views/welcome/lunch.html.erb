@@ -1,19 +1,24 @@
 <div id="menu">
-	<div class="title"> 
-		<h1> Menu </h1>
-		<div class="garnish"></div> 
+
+	<div class="bord_top"> </div>
+
+	<div class="bord_middle">
+		<div class="title"> 
+			<h1> Menu </h1>
+		</div>
+
+		<ul id="navi">
+			<li> 
+				 <a class="selected" style="float: left;" href="/welcome/lunch"> Lunch </a>
+				 <a style="float: left;margin-left: 175px;"href="/welcome/dinner"> Dinner </a>
+				 <a style="float: right;" href="/welcome/drinks"> Drinks </a>
+				 <a style="float: right;margin-right: 175px;"href="/welcome/wine"> Wine </a> 			 
+				 <div class="menu_garnish one"> </div> <div class="menu_garnish two"> </div> <div class="menu_garnish three"> </div>
+			</li>
+		</ul>
 	</div>
 
-	<ul id="navi">
-		<li> 
-			 <a class="selected" style="float: left;" href="/welcome/lunch"> Lunch </a>
-			 <a style="float: left;margin-left: 175px;"href="/welcome/dinner"> Dinner </a>
-			 <a style="float: right;" href="/welcome/drinks"> Drinks </a>
-			 <a style="float: right;margin-right: 175px;"href="/welcome/wine"> Wine </a> 			 
-			 <div class="menu_garnish one"> </div> <div class="menu_garnish two"> </div> <div class="menu_garnish three"> </div>
-		</li>
-	</ul>
-
+	<div class="bord_bot"> </div>
 	<h2><%= @perin.name %></h2>
 	<%= render @itemp %>
 

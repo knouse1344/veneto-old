@@ -111,6 +111,32 @@
 	font-family: 'Arial, helvetica' sans-serif;
 	margin-bottom: 7.5em;
 
+	.bord_top {
+		background: url('/assets/border_top.png') no-repeat;
+		width: 708px;
+		margin-left: auto;
+		margin-right: auto;
+		height: 47px;
+		margin-bottom: -24px;
+		padding: 0;
+	}
+
+	.bord_middle {
+		background: url('/assets/border_mid.png') repeat-y;
+		width: 708px;
+		height: 250px;
+		margin-left: auto;
+		margin-right: auto;		
+	}
+
+	.bord_bot {
+		background: url('/assets/border_bot.png') no-repeat;
+		width: 708px;
+		height: 42px;
+		margin-bottom: -8px;
+		margin-left: auto;
+		margin-right: auto;		
+	}
 	#navi {
 		position: relative;
 		width: 850px;
