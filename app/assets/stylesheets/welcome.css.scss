@@ -24,6 +24,37 @@
 	}
 }
 
+.bord_top {
+	background: url('/assets/border_top.png') no-repeat;
+	width: 1120px;
+	height: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+}
+
+.bord_middle {
+	background: url('/assets/border_mid.png') repeat-y;
+	width: 1120px;
+	margin-left: auto;
+	margin-right: auto;		
+
+	#inner {
+		width: 940px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.bord_bot {
+	background: url('/assets/border_bot.png') no-repeat;
+	width: 1120px;
+	height: 55px;
+	margin-left: auto;
+	margin-right: auto;	
+	margin-bottom: 4em;	
+}
+
 #index {
 	text-align: center;
 	margin-top: 15px;
@@ -78,12 +109,14 @@
 
 #contact_page {
 	font-family: 'Arial, helvetica' sans-serif;
-	color: #fff;
-	margin-top: 2em;
+	color: #222;
+	width: 1120px;
+	margin-left: -82px;
 
 	.left_col {
 		width: 300px;
 		float: left;
+		margin-left: 85px;
 
 		.name {
 			margin-bottom: 1em;
@@ -104,36 +137,6 @@
 	width: 1120px;
 	margin-left: -82px;
 
-	.bord_top {
-		background: url('/assets/border_top.png') no-repeat;
-		width: 1120px;
-		height: 60px;
-		margin-left: auto;
-		margin-right: auto;
-		padding: 0;
-	}
-
-	.bord_middle {
-		background: url('/assets/border_mid.png') repeat-y;
-		width: 1120px;
-		margin-left: auto;
-		margin-right: auto;		
-
-		#inner {
-			width: 940px;
-			margin-left: auto;
-			margin-right: auto;
-		}
-	}
-
-	.bord_bot {
-		background: url('/assets/border_bot.png') no-repeat;
-		width: 1120px;
-		height: 55px;
-		margin-left: auto;
-		margin-right: auto;	
-		margin-bottom: 4em;	
-	}
 	#navi {
 		position: relative;
 		text-align: center;
@@ -287,13 +290,16 @@
 
 #about_page {
 	font-family: 'Arial, helvetica' sans-serif;
-	color: #fff;
+	color: #222;
+	width: 1120px;
+	margin-left: -82px;
 	margin-bottom: 5em;
-	margin-top: 2em;
+	margin-bottom: 3em;
 
 	.text {
-		width: 400px;
+		width: 300px;
 		float: left;
+		margin-left: 100px;
 	}
 
 	.picture {
@@ -301,6 +307,7 @@
 		height: 400px;
 		border: 1px solid #555;
 		margin-top: 3.5em;
+		margin-bottom: 3.5em;
 		margin-left: 1em;
 		float: left;
 	}
