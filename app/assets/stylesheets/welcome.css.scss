@@ -52,7 +52,7 @@
 	height: 55px;
 	margin-left: auto;
 	margin-right: auto;	
-	margin-bottom: 4em;	
+	margin-bottom: 3em;	
 }
 
 .bordsans_top {
@@ -150,9 +150,13 @@
 	font-size: .9em;
 
 	.left_col {
-		width: 300px;
+		width: 260px;
+		height: 350px;
+		padding: 15px;
 		float: left;
-		margin-left: 85px;
+		margin-left: 65px;
+		background: #ccc;
+		border: 4px solid #a7a7a7;
 
 		h2 {
 			margin-top: 90px;
@@ -185,7 +189,8 @@
 
 	iframe {
 		width: 640px;
-		box-shadow: 5px 5px 10px #000;
+		margin-left: 40px;
+		border: 4px solid #a7a7a7;
 	}
 }
 
@@ -285,6 +290,21 @@
 		margin-top: .25em;
 		margin-bottom: 2em;
 		color: #85642E;
+	}
+
+	.menu_head {
+		font-size: 2em;
+		font-weight: bold;
+		text-align: center;
+		color: #333;
+	}
+
+	p {
+		color: #555;
+		font-size: 1.2em;
+		margin-top: 25px;
+		margin-bottom: 0;
+		text-align: center;
 	}
 }
 
