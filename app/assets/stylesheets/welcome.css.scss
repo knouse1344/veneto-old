@@ -55,6 +55,38 @@
 	margin-bottom: 4em;	
 }
 
+.bordsans_top {
+	background: url('/assets/bordersans_top.png') no-repeat;
+	width: 1120px;
+	height: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;	
+}
+
+.bordsans_mid {
+	background: url('/assets/bordersans_mid.png') repeat-y;
+	width: 1120px;
+	margin-left: auto;
+	margin-right: auto;		
+
+	#inner {
+		width: 940px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.bordsans_bot {
+	background: url('/assets/bordersans_bot.png') no-repeat;
+	width: 1120px;
+	height: 55px;
+	margin-left: auto;
+	margin-right: auto;	
+	margin-bottom: 4em;	
+}
+
+
 #index {
 	text-align: center;
 	margin-top: 15px;
@@ -88,14 +120,17 @@
 					margin-bottom: 0;
 				}
 
-				h3 {
+				.hr {
 					margin-top: 5px;
-					font-size: .9em;
-					margin-bottom: 0;
+					font-size: 1em;
+					font-weight: bold;
+					text-align: left;
 				}
 
 				span {
-					font-size: .75em;
+					font-size: 1em;
+					font-weight: normal;
+					color: #333;
 				}
 
 				.dinner {
@@ -289,7 +324,6 @@
 }
 
 #about_page {
-	font-family: 'Arial, helvetica' sans-serif;
 	color: #222;
 	width: 1120px;
 	margin-left: -82px;
@@ -297,9 +331,21 @@
 	margin-bottom: 3em;
 
 	.text {
-		width: 300px;
-		float: left;
-		margin-left: 100px;
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
+		width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 40px;
+	}
+
+	#gallery {
+		width: 900px;
+		height: 500px;
+		background: #aaa;
+		border: 6px solid #444;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 40px;
 	}
 
 	.picture {
