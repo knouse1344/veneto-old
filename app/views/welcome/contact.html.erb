@@ -10,11 +10,11 @@
 			318 East Avenue</br>Rochester, NY 14607</br>585.454.5444
 
 			<h2> Get Directions </h2>
-			From:
+			<p style="width: 250px;margin-top: 5px;">Enter your address below and we will generate directions for you.</p>
 			<div class="input"> 			
 				<%= form_tag('/maps') do %>
 				  <p>
-				    <%= text_field_tag 'address', nil, :placeholder => " Enter Address" %>
+				    <%= text_field_tag 'address', nil, :placeholder => " Enter Address", class: "field" %>
 				    <%= submit_tag "Take me to Veneto!", class: "submit", :target => '_blank', :name => nil %>
 				  </p>
 				<% end %>

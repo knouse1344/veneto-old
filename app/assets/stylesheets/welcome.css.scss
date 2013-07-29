@@ -20,7 +20,7 @@
 		font-size: 2.25em;
 		margin-top: 0;
 		color: #999;
-		text-shadow: 2px 2px #444;
+		text-shadow: 1px 1px #444;
 	}
 }
 
@@ -147,6 +147,7 @@
 	color: #222;
 	width: 1120px;
 	margin-left: -82px;
+	font-size: .9em;
 
 	.left_col {
 		width: 300px;
@@ -160,6 +161,9 @@
 
 		.input {
 
+			.field {
+				width: 250px;
+			}
 			.submit {
 				margin-top: 5px;
 			}
@@ -173,9 +177,10 @@
 	}
 
 	.bottom_box {
-		width: 900px;
+		text-align: center;
 		margin-top: 40px;
-		margin-left: 85px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	iframe {
@@ -359,12 +364,29 @@
 
 	#gallery {
 		width: 900px;
-		height: 500px;
+		height: 425px;
 		background: #aaa;
 		border: 6px solid #444;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 40px;
+
+		.g_img {
+			border: 3px solid #fafafa;
+			width: 260px;
+		}
+
+		.cent {
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+
+		.row {
+			width: 847px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 20px;
+		}
 	}
 
 	.picture {
