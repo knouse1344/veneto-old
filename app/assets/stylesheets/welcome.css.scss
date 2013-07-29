@@ -19,8 +19,8 @@
 		font-weight: bold;
 		font-size: 2.25em;
 		margin-top: 0;
-		color: #A88251;
-		text-shadow: 2px 2px #59441E;
+		color: #999;
+		text-shadow: 2px 2px #444;
 	}
 }
 
@@ -143,7 +143,7 @@
 }
 
 #contact_page {
-	font-family: 'Arial, helvetica' sans-serif;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
 	color: #222;
 	width: 1120px;
 	margin-left: -82px;
@@ -153,10 +153,29 @@
 		float: left;
 		margin-left: 85px;
 
-		.name {
-			margin-bottom: 1em;
-			font-size: 1.5em;
+		h2 {
+			margin-top: 90px;
+			margin-bottom: 0px;
 		}
+
+		.input {
+
+			.submit {
+				margin-top: 5px;
+			}
+		}
+		.name {
+			background: url('/assets/header_logo.png') no-repeat;
+			background-size: 250px;
+			height: 20px;
+			margin-bottom: 2em;
+		}
+	}
+
+	.bottom_box {
+		width: 900px;
+		margin-top: 40px;
+		margin-left: 85px;
 	}
 
 	iframe {
@@ -183,7 +202,7 @@
 
 		a {
 			display: inline-block;
-			color: #B38A56;
+			color: #999;
 			text-decoration: none;
 			font-size: 1.4em;
 			text-transform: uppercase;
@@ -192,8 +211,8 @@
 		}
 
 		a:hover {
-			color: #735227;
-			border-bottom: 3px solid #735227;
+			color: #666;
+			border-bottom: 3px solid #666;
 		}
 
 		.one {
@@ -221,8 +240,8 @@
 		}
 		
 		.selected {
-			color: #735227;
-			border-bottom: 3px solid #735227;
+			color: #666;
+			border-bottom: 3px solid #666;
 		}
 	}
 

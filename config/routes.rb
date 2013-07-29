@@ -1,4 +1,6 @@
 Venetos::Application.routes.draw do
+  get "maps/create"
+
   get "items/index"
 
   resources :items
@@ -20,6 +22,11 @@ Venetos::Application.routes.draw do
   get "welcome/contact"
 
   get "welcome/events"
+
+  get "welcome/menus"
+
+  match 'maps' => 'maps#create', via: :post
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

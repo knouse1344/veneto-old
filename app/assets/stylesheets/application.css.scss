@@ -33,8 +33,10 @@ body {
 	height: 100%;
 	background: url('/assets/site_bg.jpg');
 	background-size: 100%;
-	background-position: top left;	
+	background-position: top left;
 	position: relative;
+	margin:0;
+	padding:0;
 
 	#header {
 		z-index: 15;
@@ -140,18 +142,54 @@ body {
 		text-align: center;
 		padding-top: 15px;
 		box-shadow: 0px -3px 10px #222;
+		border-top: 2px solid #444;
 
 		.wrapper {
-			width: 940px;
+			width: 1070px;
 			margin-left: auto;
 			margin-right: auto;
 			display: table;
 			text-align: left;
 
+			h3 {
+				color: #eee;
+			}
+
 			.something {
 				width: 250px;
 				display: table-cell;
 				text-align: left;
+
+				.fb {
+					background: url('/assets/footer_fb.jpg') no-repeat;
+					height: 46px;
+					width: 46px;
+					margin-right: 20px;
+					display: inline-block;
+				}
+
+				.gp {
+					background:url('/assets/footer_gplus.jpg') no-repeat;
+					height: 46px;
+					width: 46px;
+					margin-right: 20px;
+					display: inline-block;
+				}
+
+				.yp {
+					background:url('/assets/footer_yelp.jpg') no-repeat;
+					height: 46px;
+					width: 46px;
+					display: inline-block;
+				}	
+
+				.icon {
+					opacity: .4;
+				}			
+
+				.icon:hover {
+					opacity: .8;
+				}
 			}
 
 			.address {
@@ -162,8 +200,9 @@ body {
 
 			.contact {
 				text-align: center;
-				width: 250px;
-				display: table-cell;		
+				width: 300px;
+				margin-left: auto;
+				margin-right: auto;		
 			}
 		}
 	}
