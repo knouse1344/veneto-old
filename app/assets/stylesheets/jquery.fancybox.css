@@ -182,11 +182,12 @@
 	position: fixed;
 	bottom: 0;
 	right: 0;
+	overflow: hidden;
 }
 
 .fancybox-lock .fancybox-overlay {
 	overflow: auto;
-	overflow-y: scroll;
+	overflow-y: hidden;
 }
 
 /* Title helper */
