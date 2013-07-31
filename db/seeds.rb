@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Section.create([{name: 'Per Incomincieri', id: '1'}, {name: ' Insalata', id: '2'}, {name: 'Wood Fired Pizza', id: '3'}, {name: 'Pasta & Entrees', id: '4'}])
+
