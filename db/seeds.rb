@@ -6,11 +6,11 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Section.create([{name: 'Per Incomincieri', id: '1'}])
+per = Section.create([{name: 'Per Incomincieri', id: '1'}])
 Section.create([{name: ' Insalata', id: '2'}])
 Section.create([{name: 'Wood Fired Pizza', id: '3'}])
 Section.create([{name: 'Pasta & Entrees', id: '4'}])
 
 
-Item.create([{name: 'Antipasto for Two', price: '15', desc: 'A sampler of imported Italian meats and cheeses.  Hot and sweet soppressata, prosciutto, Italian olives and marinated artichokes.', section: 'Per Incomincieri'},
-			 {name: 'Eggplant Fritters', price: '10', desc: 'Roasted eggplant, cheese, herbs, and bread crumbs served panfried with a spicy yogurt sauce.', section: 'Per Incomincieri'}])
+Item.create([{name: 'Antipasto for Two', price: '15', desc: 'A sampler of imported Italian meats and cheeses.  Hot and sweet soppressata, prosciutto, Italian olives and marinated artichokes.', section: 'per'},
+			 {name: 'Eggplant Fritters', price: '10', desc: 'Roasted eggplant, cheese, herbs, and bread crumbs served panfried with a spicy yogurt sauce.', section: 'per'}])
