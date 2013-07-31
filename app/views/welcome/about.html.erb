@@ -7,13 +7,13 @@
 		</div>
 		<div id="gallery">
 			<div class="row">
-			<a id="fancybox" href="/assets/DSC_0012.JPG" ><img class="g_img" src="/assets/DSC_0012.JPG" alt="" /></a>
-			<a id="fancybox" href="/assets/DSC_0012.JPG" ><img class="g_img cent"  src="/assets/DSC_0012.JPG" alt="" /></a>
-			<a id="fancybox" href="/assets/DSC_0012.JPG" ><img class="g_img"  src="/assets/DSC_0012.JPG" alt="" /></a>
+			<a href="/assets/DSC_0012.JPG" rel="prettyPhoto" title="This is the description"><img class="g_img" src="/assets/DSC_0012.JPG" /></a>
+			<a href="/assets/DSC_0012.JPG" rel="prettyPhoto" title="This is the description"><img class="g_img cent" src="/assets/DSC_0012.JPG" /></a>
+			<a href="/assets/DSC_0012.JPG" rel="prettyPhoto" title="This is the description"><img class="g_img" src="/assets/DSC_0012.JPG" /></a>
 			</div><div class="row">
-			<a id="fancybox" href="/assets/DSC_0012.JPG" ><img class="g_img"  src="/assets/DSC_0012.JPG" alt="" /></a>
-			<a id="fancybox" href="/assets/DSC_0012.JPG" ><img class="g_img cent"  src="/assets/DSC_0012.JPG" alt="" /></a>
-			<a id="fancybox" href="/assets/DSC_0012.JPG" ><img class="g_img"  src="/assets/DSC_0012.JPG" alt="" /></a>
+			<a href="/assets/DSC_0012.JPG" rel="prettyPhoto" title="This is the description"><img class="g_img" src="/assets/DSC_0012.JPG" /></a>
+			<a href="/assets/DSC_0012.JPG" rel="prettyPhoto" title="This is the description"><img class="g_img cent" src="/assets/DSC_0012.JPG" /></a>
+			<a href="/assets/DSC_0012.JPG" rel="prettyPhoto" title="This is the description"><img class="g_img" src="/assets/DSC_0012.JPG" /></a>
 			</div>
 		</div>
 		<div class="text">
@@ -22,11 +22,10 @@
 		<br class="clear" />
 	</div>
 
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/* This is basic - uses default settings */
-			$("a#fancybox").fancybox();
-		});
+	<script type="text/javascript" charset="utf-8">
+	  $(document).ready(function(){
+	    $("a[rel^='prettyPhoto']").prettyPhoto({social_tools:false});
+	  });
 	</script>
 
 	<div class="bordsans_bot"> </div>		
