@@ -6,7 +6,9 @@ ActiveAdmin.setup do |config|
   # for each of the active admin pages.
   #
   #config.site_title = "Venetos"
-  config.site_title_image = "/assets/header_logo.png"
+
+  config.site_title_image = "/assets/header_logo_small.png"
+
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
   #
