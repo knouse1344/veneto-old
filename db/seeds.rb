@@ -12,5 +12,5 @@ Section.create([{name: 'Wood Fired Pizza', id: '3'}])
 Section.create([{name: 'Pasta & Entrees', id: '4'}])
 
 
-Item.create([{name: 'Antipasto for Two', price: '15', desc: 'A sampler of imported Italian meats and cheeses.  Hot and sweet soppressata, prosciutto, Italian olives and marinated artichokes.', Section.name: 'Per Incomincieri'},
-			 {name: 'Eggplant Fritters', price: '10', desc: 'Roasted eggplant, cheese, herbs, and bread crumbs served panfried with a spicy yogurt sauce.', Section.name: 'Per Incomincieri'}])
+Item.create([{name: 'Antipasto for Two', price: '15', desc: 'A sampler of imported Italian meats and cheeses.  Hot and sweet soppressata, prosciutto, Italian olives and marinated artichokes.', section: 'Per Incomincieri'},
+			 {name: 'Eggplant Fritters', price: '10', desc: 'Roasted eggplant, cheese, herbs, and bread crumbs served panfried with a spicy yogurt sauce.', section: 'Per Incomincieri'}])
