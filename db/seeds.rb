@@ -6,5 +6,11 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Section.create([{name: 'Per Incomincieri', id: '1'}, {name: ' Insalata', id: '2'}, {name: 'Wood Fired Pizza', id: '3'}, {name: 'Pasta & Entrees', id: '4'}])
+per = Section.create([{name: 'Per Incomincieri', id: '1'}])
+insalata = Section.create([{name: ' Insalata', id: '2'}])
+wood = Section.create([{name: 'Wood Fired Pizza', id: '3'}])
+pasta = Section.create([{name: 'Pasta & Entrees', id: '4'}])
 
+
+per.items.create([{name: 'Antipasto for Two', price: '15', desc: 'A sampler of imported Italian meats and cheeses.  Hot and sweet soppressata, prosciutto, Italian olives and marinated artichokes.'},
+			 {name: 'Eggplant Fritters', price: '10', desc: 'Roasted eggplant, cheese, herbs, and bread crumbs served panfried with a spicy yogurt sauce.'}])
