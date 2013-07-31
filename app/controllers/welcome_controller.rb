@@ -3,17 +3,25 @@ class WelcomeController < ApplicationController
   end
 
   def lunch
-    @perin = Section.find(1)
-    @itemp = @perin.items.sort!
-    @insal = Section.find(2)
-    @itemi = @insal.items.sort!
-    @pizza = Section.find(3)
-    @item_pizza = @pizza.items.sort!
-    @pasta = Section.find(4)
-    @item_pasta = @pasta.items.sort!
+    @perin = Lunchsection.find(1)
+    @itemp = @perin.lunchitems.sort!
+    @insal = Lunchsection.find(2)
+    @itemi = @insal.lunchitems.sort!
+    @pizza = Lunchsection.find(3)
+    @item_pizza = @pizza.lunchitems.sort!
+    @pasta = Lunchsection.find(4)
+    @item_pasta = @pasta.lunchitems.sort!
   end
 
   def dinner
+    @dperin = Dinnersection.find(5)
+    @itemdp = @dperin.dinneritems.sort!
+    @dinsal = Dinnersection.find(6)
+    @itemdi = @dinsal.dinneritems.sort!
+    @dpizza = Dinnersection.find(7)
+    @itemdpizza = @dpizza.dinneritems.sort!
+    @dpasta = Dinnersection.find(8)
+    @itemdpasta = @dpasta.dinneritems.sort!
   end
 
   def drinks
