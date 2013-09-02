@@ -168,7 +168,7 @@ body {
 					display: inline-block;
 				}
 
-				.gp {
+				.ta {
 					background:url('/assets/footer_gplus.jpg') no-repeat;
 					height: 46px;
 					width: 46px;
@@ -203,6 +203,10 @@ body {
 				width: 300px;
 				margin-left: auto;
 				margin-right: auto;		
+
+				a {
+					color: #aaa;
+				}
 			}
 		}
 	}

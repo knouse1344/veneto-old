@@ -96,13 +96,26 @@
 
 	#gray {
 		width: 1120px;
-		height: 400px;
-		position: absolute;
-		left: 50%;
-		margin-left: -560px;
+		margin-left: auto;
+		margin-right: auto;
+		border: 1px solid #fff;
 		margin-top: 5em;
-		margin-bottom: 5em;
 		
+		.ratings {
+			width:932px;
+			height: 128px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.ratings_title {
+			margin-bottom: 1em;
+			font-size: 1.75em;
+			font-family:"Trebuchet MS", Helvetica, sans-serif;
+			font-weight: bold;
+			text-align: center;
+		}
+
 		#hours {
 			width: 300px;
 			margin-left: 20px;
