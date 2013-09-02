@@ -92,13 +92,11 @@
 	margin-top: 15px;
 	margin-left: -93px;
 	width: 1140px;
-	height: 900px;
 
 	#gray {
 		width: 1120px;
 		margin-left: auto;
 		margin-right: auto;
-		border: 1px solid #fff;
 		margin-top: 5em;
 		
 		.ratings {
@@ -124,11 +122,10 @@
 	
 			h1 {
 				padding-bottom: .5em;
-				border-bottom: 2px solid #916136;
+				border-bottom: 2px solid #444;
 				font-family: 'Junge', serif;
-				text-shadow: 1px 1px #111;
 				font-size: 1.5em;
-				color: #916136;
+				color: #444;
 				margin-top: 0;
 
 			}
@@ -146,6 +143,7 @@
 					font-size: 1em;
 					font-weight: bold;
 					text-align: left;
+					border-bottom: 1px solid #333;
 				}
 
 				span {
