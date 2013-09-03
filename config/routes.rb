@@ -1,4 +1,7 @@
 Venetos::Application.routes.draw do
+
+  root :to => 'welcome#index'
+  
   get "maps/create"
 
   get "items/index"
