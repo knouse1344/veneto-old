@@ -6,13 +6,14 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Lunchsection.create([{name: 'Per Incomincieri', id: '1'}])
-Lunchsection.create([{name: ' Insalata', id: '2'}])
+Lunchsection.create([{name: 'Per Cominciare', id: '1'}])
+Lunchsection.create([{name: 'Insalata', id: '2'}])
 Lunchsection.create([{name: 'Wood Fired Pizza', id: '3'}])
 Lunchsection.create([{name: 'Pasta & Entrees', id: '4'}])
+Lunchsection.create([{name: 'Sandwiches', id: '5'}])
 
-Dinnersection.create([{name: 'Per Incomincieri', id: '5'}])
-Dinnersection.create([{name: ' Insalata', id: '6'}])
+Dinnersection.create([{name: 'Per Cominciare', id: '5'}])
+Dinnersection.create([{name: 'Insalata', id: '6'}])
 Dinnersection.create([{name: 'Wood Fired Pizza', id: '7'}])
 Dinnersection.create([{name: 'Pasta & Entrees', id: '8'}])
 
@@ -43,7 +44,13 @@ Lunchitem.create([{name: 'Antipasto for Two', price: '15', desc: 'A sampler of i
 			 {name: 'Rustica', price: '15', desc: 'Fettuccine, Italian sausage, green bell peppers, caramelized onions, fresh herbs, house marinara, mozzarella cheese, topped with asiago cheese.', lunchsection_id: '4'},
 			 {name: 'Lasagna', price: '14', desc: 'Five cheeses with house marinara.', lunchsection_id: '4'},
 			 {name: 'Pasta con Funghi', price: '17', desc: 'Fettuccine with roasted wild mushrooms, garlic, shallots, fresh herbs, spinach in a light truffle cream sauce or light truffle broth.  Topped with Lively Run goat cheese.', lunchsection_id: '4'},
-			 {name: 'Homemade Ricotta Gnocchi with choice of sauce', price: '15', desc: ' ', lunchsection_id: '4'}])
+			 {name: 'Homemade Ricotta Gnocchi with choice of sauce', price: '15', desc: ' ', lunchsection_id: '4'},
+			 {name: 'Classic Rib Eye Burger', price: '12', desc: 'Fresh ground rib eye patty with lettuce, sliced tomato, and mayo.', lunchsection_id: '5'},
+			 {name: 'Tuna Salad', price: '12', desc: 'White Albacore tuna mixed with mayo, celery, and sweet relish served with lettuce and tomato.', lunchsection_id: '5'},
+			 {name: 'Turkey BLT', price: '12', desc: 'Sliced turkey with crisp bacon, melted cheddar cheese, lettuce, tomato and mayo.', lunchsection_id: '5'},
+			 {name: 'Eggplant Parm', price: '11', desc: 'Breaded eggplant, baked with our housemade marinara sauce, and fresh mozzarella.', lunchsection_id: '5'}
+			 {name: 'Grilled Chicken Caesar', price: '12', desc: 'Free-range grilled chicken breast, served with tomatoes, Asiago cheese, Romaine lettuce and creamy Caesar dressing.', lunchsection_id: '5'}
+			 {name: 'Classic Egg Salad', price: '9', desc: 'Fresh chopped hard boiled eggs, mixed with mayo served on white bread with lettuce and tomato.', lunchsection_id: '5'}])
 
 
 Dinneritem.create([{name: 'Antipasto for Two (For Dinner)', price: '15', desc: 'A sampler of imported Italian meats and cheeses.  Hot and sweet soppressata, prosciutto, Italian olives and marinated artichokes.', dinnersection_id: '5'},

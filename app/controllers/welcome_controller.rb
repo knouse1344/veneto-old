@@ -11,6 +11,8 @@ class WelcomeController < ApplicationController
     @item_pizza = @pizza.lunchitems.sort!
     @pasta = Lunchsection.find(4)
     @item_pasta = @pasta.lunchitems.sort!
+    @sand = Lunchsection.find(5)
+    @item_sand = @sand.lunchitems.sort!
   end
 
   def dinner
