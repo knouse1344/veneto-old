@@ -48,8 +48,8 @@ Lunchitem.create([{name: 'Antipasto for Two', price: '15', desc: 'A sampler of i
 			 {name: 'Classic Rib Eye Burger', price: '12', desc: 'Fresh ground rib eye patty with lettuce, sliced tomato, and mayo.', lunchsection_id: '5'},
 			 {name: 'Tuna Salad', price: '12', desc: 'White Albacore tuna mixed with mayo, celery, and sweet relish served with lettuce and tomato.', lunchsection_id: '5'},
 			 {name: 'Turkey BLT', price: '12', desc: 'Sliced turkey with crisp bacon, melted cheddar cheese, lettuce, tomato and mayo.', lunchsection_id: '5'},
-			 {name: 'Eggplant Parm', price: '11', desc: 'Breaded eggplant, baked with our housemade marinara sauce, and fresh mozzarella.', lunchsection_id: '5'}
-			 {name: 'Grilled Chicken Caesar', price: '12', desc: 'Free-range grilled chicken breast, served with tomatoes, Asiago cheese, Romaine lettuce and creamy Caesar dressing.', lunchsection_id: '5'}
+			 {name: 'Eggplant Parm', price: '11', desc: 'Breaded eggplant, baked with our housemade marinara sauce, and fresh mozzarella.', lunchsection_id: '5'},
+			 {name: 'Grilled Chicken Caesar', price: '12', desc: 'Free-range grilled chicken breast, served with tomatoes, Asiago cheese, Romaine lettuce and creamy Caesar dressing.', lunchsection_id: '5'},
 			 {name: 'Classic Egg Salad', price: '9', desc: 'Fresh chopped hard boiled eggs, mixed with mayo served on white bread with lettuce and tomato.', lunchsection_id: '5'}])
 
 
