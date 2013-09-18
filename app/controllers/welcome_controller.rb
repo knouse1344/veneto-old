@@ -13,6 +13,8 @@ class WelcomeController < ApplicationController
     @item_pasta = @pasta.lunchitems.sort!
     @sand = Lunchsection.find(5)
     @item_sand = @sand.lunchitems.sort!
+    @bev = Lunchsection.find(6)
+    @item_bev = @bev.lunchitems.sort!
   end
 
   def dinner
@@ -24,6 +26,8 @@ class WelcomeController < ApplicationController
     @itemdpizza = @dpizza.dinneritems.sort!
     @dpasta = Dinnersection.find(8)
     @itemdpasta = @dpasta.dinneritems.sort!
+    @dbev = Dinnersection.find(9)
+    @item_dbev = @dbev.dinneritems.sort!
   end
 
   def drinks
