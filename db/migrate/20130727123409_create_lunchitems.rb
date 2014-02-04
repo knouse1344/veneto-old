@@ -5,7 +5,6 @@ class CreateLunchitems < ActiveRecord::Migration
       t.string :name
       t.string :price
       t.integer :lunchsection_id
-      t.integer :id
 
       t.timestamps
     end

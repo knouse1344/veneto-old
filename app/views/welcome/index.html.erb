@@ -32,23 +32,23 @@
 				<h1> Restaurant Hours </h1>
 				<div class="container">
 					<div class="day">
-						<strong class="hrl"> Monday: </strong> <span class="hrr"> 5:00pm - 9:00pm </span>
+						<strong class="hrl"> Monday: </strong> <span class="hrr"> <%= @hours.monday %> </span>
 					</div>
 					<div class="day">
 						<strong class="hrl"> Tuesday - Thursday:</strong>
-						<span class="hrr"> 11:00am - 2:00pm | 5:00pm - 10:00pm </span>
+						<span class="hrr"><%= @hours.tuesthurs %></span>
 					</div>
 					<div class="day">	
 						<strong class="hrl"> Friday:</strong>
-						<span class="hrr"> 11:00am - 2:00pm | 5:00pm - 11:00pm </span>
+						<span class="hrr"> <%= @hours.friday %> </span>
 					</div>
 					<div class="day">
 						<strong class="hrl"> Saturday:</strong>
-						<span class="hrr"> 5:00pm - 11:00pm </span>
+						<span class="hrr"> <%= @hours.saturday %> </span>
 					</div>
 					<div class="day">
 						<strong class="hrl"> Sunday:</strong>
-						<span class="hrr"> 4:30pm - 9:00pm </span>
+						<span class="hrr"> <%= @hours.sunday %> </span>
 					</div>
 				</div>
 			</div>

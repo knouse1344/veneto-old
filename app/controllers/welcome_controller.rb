@@ -1,5 +1,6 @@
 class WelcomeController < ApplicationController
   def index
+    @hours = Hour.find(1)
   end
 
   def lunch

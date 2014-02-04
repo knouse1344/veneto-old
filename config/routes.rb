@@ -8,8 +8,7 @@ Venetos::Application.routes.draw do
 
   resources :items
   resources :sections
-
-  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
   get "welcome/index"
