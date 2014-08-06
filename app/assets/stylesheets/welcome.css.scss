@@ -298,6 +298,21 @@
 		}
 	}
 
+	.download-menu {
+		text-align: center;
+		margin: auto;		
+		padding-top: 15px;
+
+		a {
+			text-decoration: none;
+			color: #666;
+		}
+	}
+
+	.download-menu a:hover {
+		text-decoration: underline;
+	}
+
 	.items {
 		width: 940px;
 	}

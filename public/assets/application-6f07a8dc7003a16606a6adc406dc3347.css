@@ -1101,6 +1101,15 @@ div.dark_rounded #pp_full_res .pp_inline,div.dark_square #pp_full_res .pp_inline
     #menu #navi .selected {
       color: #666;
       border-bottom: 3px solid #666; }
+  #menu .download-menu {
+    text-align: center;
+    margin: auto;
+    padding-top: 15px; }
+    #menu .download-menu a {
+      text-decoration: none;
+      color: #666; }
+  #menu .download-menu a:hover {
+    text-decoration: underline; }
   #menu .items {
     width: 940px; }
   #menu h2 {
