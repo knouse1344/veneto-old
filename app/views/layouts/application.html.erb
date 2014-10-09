@@ -27,22 +27,19 @@
 </head>
 
 	<body>
-			<div id="main_contain">
-			<div id="header">
-
-				<div class="logo"><a href="/welcome/index"><img src="/assets/header_logo.png" /></a></div>
-				
-				<div id="navibar">
-
-					<div class="links">
-						<a href="/welcome/contact"> CONTACT  </a>
-						<a href="/welcome/events" style="margin-right: 197px;"> EVENTS & PARTIES </a>
-						<a href="/welcome/about" style="margin-right: 197px;"> ABOUT </a>
-						<a href="/welcome/menus" style="margin-right: 197px;"> MENU </a>
-					</div>
-				</div>
+		<div id="header">
+			<div class="logo"><a href="/welcome/index"><img src="/assets/header_logo.png" /></a></div>
+			<div id="navibar">
+				<ul id="links">
+					<li><a href="/welcome/contact"> CONTACT  </a></li>
+					<li><a href="/welcome/events"> EVENTS & PARTIES </a></li>
+					<li><a href="/welcome/about"> ABOUT </a></li>
+					<li><a href="/welcome/menus"> MENU </a></li>
+				</ul>
 			</div>
+		</div>
 
+		<div id="main_contain">
 			<div id="page">
 				<div class="box">
 					<%= yield %>
@@ -51,7 +48,6 @@
 
 			<div id="footer">
 				<div class="wrapper">
-
 					<div class="something">
 						<h3> Follow us: </h3>
 						<a href="https://www.facebook.com/pages/Veneto-Gourmet-Pizza-Pasta/122173121129568" target="blank"><div class="fb icon"> </div></a>
@@ -59,16 +55,15 @@
 						<a href="http://www.yelp.com/biz/veneto-wood-fired-pizza-and-pasta-rochester" target="blank"><div class="yp icon"> </div></a>
 					</div>
 					<div class="copyright">  
-						Veneto Restaurant © 2013.  All Rights Reserved. <a target="_blank" href="http://www.responsive.co"><img src="/assets/responsively_made.png" /></a> 
+						Veneto Restaurant © 2014.  All Rights Reserved. <a target="_blank" href="http://www.responsive.co"><img src="/assets/responsively_made.png" /></a> 
 					</div>
 					<div class="address">
 						<h3> Find us: </h3>
 						318 East Avenue</br>Rochester, NY 14607</br>585 454 5444</br>veneto@frontier.com
 					</div>
-
 				</div>
 			</div>
-			<br class="clear" />
+			<div class="clear"></div>
 		</div>
 	</body>
 
