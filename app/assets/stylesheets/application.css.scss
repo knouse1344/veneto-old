@@ -35,17 +35,21 @@ body {
 	position: fixed;
 	top: -1px;
 	width: 100%;
-	height:208px;
 	color: #fafafa;
-	background: url('/assets/header_repeat.png') repeat-x;
+	background: #261600; /* Old browsers */
+	background: -moz-linear-gradient(left, #261600 0%, #5b513b 50%, #261600 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#261600), color-stop(50%,#5b513b), color-stop(100%,#261600)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, #261600 0%,#5b513b 50%,#261600 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #261600 0%,#5b513b 50%,#261600 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, #261600 0%,#5b513b 50%,#261600 100%); /* IE10+ */
+	background: linear-gradient(to right, #261600 0%,#5b513b 50%,#261600 100%); /* W3C */
+	border-bottom: 5px solid #806C4A;
+	box-shadow: 0px -1px 10px 6px #222;
 
 	.logo {
-		width: 872px;
-		height: 207px;
 		margin-top: 1px;
 		margin-left: auto;
 		margin-right: auto;
-		background: url('/assets/header_center.png');
 
 		a {
 			display: block;
@@ -57,14 +61,23 @@ body {
 			width: 100%;
 		}
 	}
+
+	.info {
+		text-align: center;
+		padding: 15px 0;
+
+		span {
+			text-shadow: 2px 2px #333;
+		}
+	}
 	
 	#navibar {
-		margin-top: -70px;
 
 		#links {
 			width: 80%;
 			max-width: 1100px;
 			padding: 0;
+			margin-bottom: 0;
 			margin-left: auto;
 			margin-right: auto;
 			text-transform: uppercase;
@@ -235,9 +248,60 @@ body {
 	}
 }
 
+@media (min-width: 1000px) {
+	
+	.logo {
+		width: 825px;
+	}
+}
+
 @media (max-width: 1000px) and (min-width: 500px) {
 
-	.logo a {
-		width: 300px;
+	#header {
+
+		.logo {
+
+			a {
+				width: 400px;
+			}
+		}
+	}
+
+	#main_contain {
+		padding-top: 200px;
+	}
+}
+
+@media (max-width: 500px) {
+
+	#header {
+		position: relative;
+
+		.logo {
+
+			a {
+				width: 250px;
+			}
+		}
+
+		.info {
+			display: none;
+		}
+
+		#navibar {
+
+			#links {
+				text-align: center;
+
+				li {
+					display: block;
+					padding: 5px 0;
+				}
+			}
+		}
+	}
+
+	#main_contain {
+		padding-top: 100px;
 	}
 }
