@@ -11,10 +11,9 @@ Supports Thumbs: true
 .theme-dark.slider-wrapper {
     background: #eee;
     padding: 10px;
-    width: 1075px;
     margin-left: auto;
     margin-right: auto;
-    border: 8px solid #222;
+    outline: 6px solid #222;
 }
 .theme-dark .nivoSlider {
 	position:relative;
@@ -84,7 +83,7 @@ Supports Thumbs: true
 }
 .theme-dark a.nivo-prevNav {
     background-position: 0px 75%;
-    left: auto;
+    left: 10px;
 	right: 100px;
 }
 
