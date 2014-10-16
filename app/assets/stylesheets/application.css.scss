@@ -264,6 +264,27 @@ body {
 	}
 }
 
+@media (max-width: 768px) {
+	#footer {
+
+		.container {
+
+			.social {
+				text-align: center;
+				margin-bottom: 40px;
+			}
+
+			.copyright {
+				margin-bottom: 40px;
+			}
+
+			.address {
+				text-align: center;
+			}
+		}
+	}
+}
+
 @media (max-width: 500px) {
 
 	#header {

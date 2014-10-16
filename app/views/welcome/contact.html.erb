@@ -1,36 +1,37 @@
-<div id="contact_page">
-	<div class="bordsans_top"> </div>
+<div id="contact_page" class="row">
 
-	<div class="bordsans_mid">
-		<div class="title"> 
+	<div class="contact-content col-sm-12">
+		<div class="title col-sm-12"> 
 			<h1>Contact Veneto</h1> 
 		</div>
-		<div class="left_col">	
-			<div class="name"> </div>
-			<h2> Address & Contact </h2>	
-			318 East Avenue</br>Rochester, NY 14607</br>585.454.5444
+		<div class="row">
+			<div class="left_col col-sm-3 col-sm-offset-1">	
+				<img class="name" src="/assets/header_logo.png" />
+				<h2> Address & Contact </h2>	
+				318 East Avenue</br>Rochester, NY 14607</br>585.454.5444
 
-			<h2 style="margin-top: 60px;"> Get Directions </h2>
-			<p style="width: 250px;margin-top: 5px;">Enter your address below and we will generate directions for you.</p>
-			<div class="input"> 			
-				<%= form_tag('/maps') do %>
-				  <p>
-				    <%= text_field_tag 'address', nil, :placeholder => " Enter Address", class: "field" %>
-				    <%= submit_tag "Take me to Veneto!", class: "submit", :target => '_blank', :name => nil %>
-				  </p>
-				<% end %>
+				<h2 style="margin-top: 60px;"> Get Directions </h2>
+				<p style="width: 250px;margin-top: 5px;">Enter your address below and we will generate directions for you.</p>
+				<div class="input"> 			
+					<%= form_tag('/maps') do %>
+					  <p>
+					    <%= text_field_tag 'address', nil, :placeholder => " Enter Address", class: "field" %>
+					    <%= submit_tag "Take me to Veneto!", class: "submit", :target => '_blank', :name => nil %>
+					  </p>
+					<% end %>
+				</div>
+			</div>
+			<div class="col-sm-6 col-sm-offset-1">
+				<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Veneto+Gourmet+Pizza+%26+Pasta,+318+East+Avenue,+Rochester,+NY&amp;aq=0&amp;oq=veneto&amp;sll=43.186154,-77.616348&amp;sspn=0.447587,1.012115&amp;ie=UTF8&amp;hq=Veneto+Gourmet+Pizza+%26+Pasta,&amp;hnear=318+East+Ave,+Rochester,+New+York+14604&amp;t=m&amp;ll=43.158017,-77.59562&amp;spn=0.005948,0.010707&amp;z=16&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Veneto+Gourmet+Pizza+%26+Pasta,+318+East+Avenue,+Rochester,+NY&amp;aq=0&amp;oq=veneto&amp;sll=43.186154,-77.616348&amp;sspn=0.447587,1.012115&amp;ie=UTF8&amp;hq=Veneto+Gourmet+Pizza+%26+Pasta,&amp;hnear=318+East+Ave,+Rochester,+New+York+14604&amp;t=m&amp;ll=43.158017,-77.59562&amp;spn=0.005948,0.010707&amp;z=16&amp;iwloc=A" style="color:#222;float:right;margin-top:1em;margin-right: 100px;">View Larger Map</a></small>
 			</div>
 		</div>
-		<iframe width="500" height="380" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Veneto+Gourmet+Pizza+%26+Pasta,+318+East+Avenue,+Rochester,+NY&amp;aq=0&amp;oq=veneto&amp;sll=43.186154,-77.616348&amp;sspn=0.447587,1.012115&amp;ie=UTF8&amp;hq=Veneto+Gourmet+Pizza+%26+Pasta,&amp;hnear=318+East+Ave,+Rochester,+New+York+14604&amp;t=m&amp;ll=43.158017,-77.59562&amp;spn=0.005948,0.010707&amp;z=16&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Veneto+Gourmet+Pizza+%26+Pasta,+318+East+Avenue,+Rochester,+NY&amp;aq=0&amp;oq=veneto&amp;sll=43.186154,-77.616348&amp;sspn=0.447587,1.012115&amp;ie=UTF8&amp;hq=Veneto+Gourmet+Pizza+%26+Pasta,&amp;hnear=318+East+Ave,+Rochester,+New+York+14604&amp;t=m&amp;ll=43.158017,-77.59562&amp;spn=0.005948,0.010707&amp;z=16&amp;iwloc=A" style="color:#222;float:right;margin-top:1em;margin-right: 100px;">View Larger Map</a></small>
-
-		<div class="bottom_box">
-			</br></br>
-			<span style="font-size: 1.5em; font-weight: bold;"> Questions/Concerns? </span> Email us with any inquiries directly at 
-			<a href="mailto:veneto@frontier.com" target="blank">veneto@frontier.com</a>
+		<div class="row">
+			<div class="bottom_box">
+				</br></br>
+				<span style="font-size: 1.5em; font-weight: bold;"> Questions/Concerns? </span> Email us with any inquiries directly at 
+				<a href="mailto:veneto@frontier.com" target="blank">veneto@frontier.com</a>
+			</div>
 		</div>
-
-		</br><br class="clear" />
 	</div>
-
-	<div class="bordsans_bot"> </div>		
+	
 </div>
