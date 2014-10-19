@@ -105,29 +105,23 @@ body {
   position: relative;
   margin: 0;
   padding-top: 250px; }
-  #main_contain #page {
-    position: relative;
+  #main_contain #page .box {
+    width: 956px;
     height: 100%;
-    width: 1096px;
-    margin-left: auto;
-    margin-right: auto; }
-    #main_contain #page .box {
-      width: 956px;
-      height: 100%;
-      padding-left: 70px;
-      padding-right: 70px; }
-      #main_contain #page .box .left {
-        float: left;
-        position: relative;
-        right: 70px;
-        top: 10px;
-        opacity: .4; }
-      #main_contain #page .box .right {
-        float: right;
-        position: relative;
-        left: 70px;
-        top: 10px;
-        opacity: .4; }
+    padding-left: 70px;
+    padding-right: 70px; }
+    #main_contain #page .box .left {
+      float: left;
+      position: relative;
+      right: 70px;
+      top: 10px;
+      opacity: .4; }
+    #main_contain #page .box .right {
+      float: right;
+      position: relative;
+      left: 70px;
+      top: 10px;
+      opacity: .4; }
 
 #footer {
   font-family: 'Arial, helvetica' sans-serif;
@@ -135,64 +129,56 @@ body {
   line-height: 1.25em;
   width: 100%;
   background: #222;
-  height: 135px;
   color: #aaa;
   text-align: center;
   padding-top: 15px;
+  padding-bottom: 50px;
   margin-top: 100px;
   box-shadow: 0px -3px 10px #222;
   border-top: 2px solid #444; }
-  #footer .wrapper {
-    width: 1070px;
-    margin-left: auto;
-    margin-right: auto;
-    display: table;
+  #footer .container h3 {
+    font-size: 16px;
+    color: #eee; }
+  #footer .container .social {
     text-align: left; }
-    #footer .wrapper h3 {
-      color: #eee; }
-    #footer .wrapper .something {
-      width: 250px;
-      display: table-cell;
-      text-align: left; }
-      #footer .wrapper .something .fb {
-        background: url("/assets/footer_fb.jpg") no-repeat;
-        height: 46px;
-        width: 46px;
-        margin-right: 20px;
-        display: inline-block; }
-      #footer .wrapper .something .ta {
-        background: url("/assets/footer_trip.jpg") no-repeat;
-        height: 46px;
-        width: 46px;
-        margin-right: 20px;
-        display: inline-block; }
-      #footer .wrapper .something .yp {
-        background: url("/assets/footer_yelp.jpg") no-repeat;
-        height: 46px;
-        width: 46px;
-        display: inline-block; }
-      #footer .wrapper .something .icon {
-        opacity: .4; }
-      #footer .wrapper .something .icon:hover {
-        opacity: .8; }
-    #footer .wrapper .address {
-      width: 250px;
-      display: table-cell;
-      text-align: right; }
-    #footer .wrapper .copyright {
-      width: 250px;
-      color: #bbb;
-      display: table-cell;
-      text-align: center;
-      font-size: .9em; }
-      #footer .wrapper .copyright img {
-        opacity: .5;
-        -moz-transition: opacity .25s ease-in-out;
-        -webkit-transition: opacity .25s ease-in-out;
-        -o-transition: opacity .25s ease-in-out;
-        transition: opacity .25s ease-in-out; }
-      #footer .wrapper .copyright img:hover {
-        opacity: 1; }
+    #footer .container .social .fb {
+      background: url("/assets/footer_fb.jpg") no-repeat;
+      height: 46px;
+      width: 46px;
+      margin-right: 20px;
+      display: inline-block; }
+    #footer .container .social .ta {
+      background: url("/assets/footer_trip.jpg") no-repeat;
+      height: 46px;
+      width: 46px;
+      margin-right: 20px;
+      display: inline-block; }
+    #footer .container .social .yp {
+      background: url("/assets/footer_yelp.jpg") no-repeat;
+      height: 46px;
+      width: 46px;
+      display: inline-block; }
+    #footer .container .social .icon {
+      opacity: .4; }
+    #footer .container .social .icon:hover {
+      opacity: .8; }
+  #footer .container .address {
+    text-align: right; }
+    #footer .container .address p {
+      font-size: 12px; }
+  #footer .container .copyright {
+    padding-top: 15px;
+    color: #bbb;
+    text-align: center;
+    font-size: .9em; }
+    #footer .container .copyright img {
+      opacity: .5;
+      -moz-transition: opacity .25s ease-in-out;
+      -webkit-transition: opacity .25s ease-in-out;
+      -o-transition: opacity .25s ease-in-out;
+      transition: opacity .25s ease-in-out; }
+    #footer .container .copyright img:hover {
+      opacity: 1; }
 
 @media (min-width: 1000px) {
   .logo {
@@ -203,6 +189,14 @@ body {
 
   #main_contain {
     padding-top: 200px; } }
+@media (max-width: 768px) {
+  #footer .container .social {
+    text-align: center;
+    margin-bottom: 40px; }
+  #footer .container .copyright {
+    margin-bottom: 40px; }
+  #footer .container .address {
+    text-align: center; } }
 @media (max-width: 500px) {
   #header {
     position: relative; }
@@ -232,10 +226,9 @@ Supports Thumbs: true
 .theme-dark.slider-wrapper {
     background: #eee;
     padding: 10px;
-    width: 1075px;
     margin-left: auto;
     margin-right: auto;
-    border: 8px solid #222;
+    outline: 6px solid #222;
 }
 .theme-dark .nivoSlider {
 	position:relative;
@@ -305,7 +298,7 @@ Supports Thumbs: true
 }
 .theme-dark a.nivo-prevNav {
     background-position: 0px 75%;
-    left: auto;
+    left: 10px;
 	right: 100px;
 }
 
@@ -434,10 +427,10 @@ Supports Thumbs: true
 	cursor:pointer;
 }
 .nivo-prevNav {
-	margin-right:865px;
+	
 }
 .nivo-nextNav {
-	margin-right: 25px;
+
 }
 /* Control nav styles (e.g. 1,2,3...) */
 .nivo-controlNav {
@@ -936,17 +929,11 @@ div.dark_rounded #pp_full_res .pp_inline,div.dark_square #pp_full_res .pp_inline
   position: relative;
   top: 0px;
   padding-bottom: 20px;
-  width: 850px;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center; }
   .title h1 {
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 2.25em;
+    font-size: 36px;
     margin-top: 0;
     color: #555;
     text-shadow: 1px 1px #444; }
@@ -1005,28 +992,22 @@ div.dark_rounded #pp_full_res .pp_inline,div.dark_square #pp_full_res .pp_inline
 
 #index {
   text-align: center;
-  margin-top: 15px;
-  margin-left: -93px;
-  width: 1140px; }
+  margin-top: 15px; }
   #index #gray {
-    width: 1120px;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 5em; }
     #index #gray .ratings {
-      width: 930px;
-      height: 156px;
-      margin-left: auto;
-      margin-right: auto; }
+      background: rgba(255, 255, 255, 0.6);
+      border: 4px solid #888;
+      outline: 6px solid #111; }
     #index #gray .ratings_title {
       margin-bottom: 1em;
       font-size: 1.75em;
       font-family: "Trebuchet MS", Helvetica, sans-serif;
       font-weight: bold;
       text-align: center; }
+    #index #gray .more-information {
+      padding-top: 50px; }
     #index #gray #hours {
-      width: 375px;
-      margin-left: 0px;
       font-family: 'Arial, helvetica' sans-serif;
       color: #222; }
       #index #gray #hours h1 {
@@ -1037,38 +1018,34 @@ div.dark_rounded #pp_full_res .pp_inline,div.dark_square #pp_full_res .pp_inline
         color: #444;
         margin-top: 0; }
       #index #gray #hours .container {
-        margin-top: -1em;
-        width: 375px; }
+        margin-top: -1em; }
         #index #gray #hours .container .day {
-          width: 100%;
           padding-top: 8px;
           padding-bottom: 3px;
           border-bottom: 1px dotted;
-          float: left;
           clear: both; }
           #index #gray #hours .container .day .hrl {
-            font-size: .8em;
-            float: left;
-            text-align: left; }
+            font-size: .8em; }
           #index #gray #hours .container .day .hrr {
             color: #333;
-            font-size: .8em;
-            float: right; }
+            font-size: .8em; }
+    #index #gray .google-maps {
+      margin-top: 40px; }
+      #index #gray .google-maps iframe {
+        width: 100%;
+        height: 250px; }
 
 #contact_page {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   color: #222;
-  width: 1120px;
-  margin-left: -82px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 4px solid #888;
+  outline: 6px solid #111;
   font-size: .9em; }
+  #contact_page .title {
+    margin-top: 40px; }
   #contact_page .left_col {
-    width: 260px;
-    height: 350px;
-    padding: 15px;
-    float: left;
-    margin-left: 65px;
-    background: #ccc;
-    border: 4px solid #555; }
+    padding: 15px; }
     #contact_page .left_col h2 {
       margin-top: 10px;
       margin-bottom: 0px;
@@ -1078,26 +1055,25 @@ div.dark_rounded #pp_full_res .pp_inline,div.dark_square #pp_full_res .pp_inline
     #contact_page .left_col .input .submit {
       margin-top: 5px; }
     #contact_page .left_col .name {
-      background: url("/assets/header_logo.png") no-repeat;
-      background-size: 250px;
-      height: 20px;
+      width: 100%;
       margin-bottom: 2em; }
   #contact_page .bottom_box {
     text-align: center;
-    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     margin-left: auto;
     margin-right: auto; }
   #contact_page iframe {
-    width: 640px;
-    margin-left: 40px;
+    height: 300px;
+    padding: 0;
+    width: 100%;
+    margin-top: 35px;
     border: 4px solid #555; }
 
 #menu {
   color: #222;
   font-family: 'Arial, helvetica' sans-serif;
-  margin-bottom: 7.5em;
-  width: 1120px;
-  margin-left: -82px; }
+  margin-bottom: 7.5em; }
   #menu #navi {
     position: relative;
     text-align: center;
@@ -1264,44 +1240,21 @@ div.dark_rounded #pp_full_res .pp_inline,div.dark_square #pp_full_res .pp_inline
     color: #222; }
 
 #about_page {
-  color: #222;
-  width: 1120px;
-  margin-left: -82px;
-  margin-bottom: 5em;
-  margin-bottom: 3em; }
+  background: rgba(255, 255, 255, 0.6);
+  border: 4px solid #888;
+  outline: 6px solid #111; }
+  #about_page .title {
+    margin-top: 40px; }
   #about_page .text {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    width: 900px;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 40px; }
   #about_page #gallery {
-    width: 900px;
-    height: 425px;
-    background: #aaa;
-    border: 6px solid #444;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 40px; }
     #about_page #gallery .g_img {
       border: 3px solid #fafafa;
-      width: 260px; }
-    #about_page #gallery .cent {
-      margin-left: 20px;
-      margin-right: 20px; }
+      width: 100%; }
     #about_page #gallery .row {
-      width: 847px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 20px; }
-  #about_page .picture {
-    width: 600px;
-    height: 400px;
-    border: 1px solid #555;
-    margin-top: 3.5em;
-    margin-bottom: 3.5em;
-    margin-left: 1em;
-    float: left; }
+      margin-bottom: 30px; }
 
 .nivoSlider {
   position: relative;
@@ -1318,19 +1271,21 @@ div.dark_rounded #pp_full_res .pp_inline,div.dark_square #pp_full_res .pp_inline
   display: block; }
 
 #event {
-  width: 1120px;
-  margin-left: -82px;
-  height: 800px; }
+  background: rgba(255, 255, 255, 0.6);
+  border: 4px solid #888;
+  outline: 6px solid #111; }
+  #event .events {
+    padding-bottom: 60px; }
+  #event .title {
+    margin-top: 40px; }
   #event img {
-    width: 507px;
-    margin-left: 100px;
+    width: 100%;
     border: 4px solid #555; }
+  #event h2 {
+    font-size: 24px; }
   #event .left_col {
-    width: 260px;
-    height: 350px;
-    padding: 15px;
-    float: left;
-    margin-left: 95px;
-    background: #ccc;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: rgba(0, 0, 0, 0.1);
     border: 4px solid #555;
     font-family: "Trebuchet MS", Helvetica, sans-serif; }
