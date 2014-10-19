@@ -102,10 +102,13 @@
 			text-align: center;
 		}
 
+		.more-information {
+			padding-top: 50px;
+		}
+
 		#hours {
 			font-family: 'Arial, helvetica' sans-serif;
 			color: #222;
-			margin-top: 40px;
 	
 			h1 {
 				padding-bottom: .5em;
@@ -119,28 +122,31 @@
 	
 			.container {
 				margin-top: -1em;
-				width: 375px;
 
 				.day {
-					width:100%;
 					padding-top: 8px;
 					padding-bottom: 3px;
 					border-bottom: 1px dotted;
-					float: left;
 					clear: both;
 
 					.hrl {
 						font-size: .8em;
-						float: left;
-						text-align: left;
 					}
 
 					.hrr {
 						color: #333;
 						font-size: .8em;
-						float: right;
 					}
 				}
+			}
+		}
+
+		.google-maps {
+			margin-top: 40px;
+
+			iframe {
+				width: 100%;
+				height: 250px;
 			}
 		}
 	}
