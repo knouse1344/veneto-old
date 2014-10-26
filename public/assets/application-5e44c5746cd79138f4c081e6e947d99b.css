@@ -944,6 +944,7 @@ div.dark_rounded #pp_full_res .pp_inline,div.dark_square #pp_full_res .pp_inline
   margin-right: auto;
   padding: 0; }
   .bord_top img {
+    vertical-align: bottom;
     width: 100%; }
 
 .bord_middle {
@@ -951,12 +952,9 @@ div.dark_rounded #pp_full_res .pp_inline,div.dark_square #pp_full_res .pp_inline
   background-size: contain; }
 
 .bord_bot {
-  background-size: contain;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 3em; }
-  .bord_bot img {
-    width: 100%; }
+  width: 100%;
+  margin-bottom: 25px;
+  vertical-align: top; }
 
 .bordsans_top {
   background: url("/assets/bsans_top.png") no-repeat;

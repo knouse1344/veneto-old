@@ -25,6 +25,7 @@
 	padding: 0;
 
 	img {
+		vertical-align: bottom;
 		width: 100%;
 	}
 }
@@ -39,14 +40,9 @@
 }
 
 .bord_bot {
-	background-size: contain;
-	margin-left: auto;
-	margin-right: auto;	
-	margin-bottom: 3em;	
-
-	img {
-		width: 100%;
-	}
+	width: 100%;
+	margin-bottom: 25px;
+	vertical-align: top;
 }
 
 .bordsans_top {
