@@ -19,34 +19,34 @@
 }
 
 .bord_top {
-	background: url('/assets/bord_top.png') no-repeat;
-	width: 1120px;
-	height: 60px;
+	background-size: contain;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0;
+
+	img {
+		width: 100%;
+	}
 }
 
 .bord_middle {
 	background: url('/assets/bord_mid.png') repeat-y;
-	width: 1120px;
-	margin-left: auto;
-	margin-right: auto;		
+	background-size: contain;	
 
 	#inner {
-		width: 940px;
-		margin-left: auto;
-		margin-right: auto;
+
 	}
 }
 
 .bord_bot {
-	background: url('/assets/bord_bot.png') no-repeat;
-	width: 1120px;
-	height: 55px;
+	background-size: contain;
 	margin-left: auto;
 	margin-right: auto;	
 	margin-bottom: 3em;	
+
+	img {
+		width: 100%;
+	}
 }
 
 .bordsans_top {
@@ -213,17 +213,13 @@
 	#navi {
 		position: relative;
 		text-align: center;
-		height: 40px;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: -1em;
 		list-style-type: none;
 
 		a {
-			display: inline-block;
 			color: #999;
 			text-decoration: none;
 			font-size: 1.4em;
+			line-height: 1.9em;
 			text-transform: uppercase;
 			font-weight: bold;
 			font-family:"Trebuchet MS", Helvetica, sans-serif;
@@ -304,10 +300,6 @@
 		text-decoration: underline;
 	}
 
-	.items {
-		width: 940px;
-	}
-
 	h2 {
 		font-family:"Trebuchet MS", Helvetica, sans-serif;
 		text-align: left;
@@ -319,15 +311,10 @@
 		border-bottom: 2px solid #4F4129;
 		padding-bottom: .6em;
 		margin-bottom: .5em;
-		height: 25px;
 		margin-top: 0px;
 	}
 
 	#left_col {
-		width: 350px;
-		margin-right: 30px;
-		display: inline-block;
-		vertical-align: top;
 
 		.perin {
 			
@@ -347,9 +334,6 @@
 	}
 
 	#right_col {
-		width: 550px;
-		display: inline-block;
-		vertical-align: top; 
 
 		.wood {
 

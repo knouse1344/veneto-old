@@ -1,78 +1,70 @@
 <div id="menu">
-
-	<div class="bord_top"> </div>
-
-	<div class="bord_middle">
-		<div class="title"> 
-			<h1> Menu </h1>
+	<div class="row">
+		<div class="bord_top"><img src='/assets/bord_top.png' /></div>
+		<div class="bord_middle col-sm-12">
+			<div class="title"> 
+				<h1> Menu </h1>
+			</div>
+			<div id="navi">
+				 <div class="col-sm-4">
+				 	<a href="/welcome/lunch"> Lunch </a>
+				 </div>
+				 <div class="col-sm-4">
+				 	<a class="selected" href="/welcome/dinner"> Dinner </a>
+				 </div>
+				 <div class="col-sm-4">
+				 	<a href="/welcome/drinks"> Drinks </a>
+				 </div>
+			</div>
+			</br class="clear">
+			<div class="download-menu"><a target="_blank" href="/Veneto_dinnermenu_7.28.14_a.pdf"><i class="fa fa-file-pdf-o"></i>&ensp;Download Veneto Dinner Menu </a></div>
 		</div>
-
-		<div id="navi">
-			 <a href="/welcome/lunch"> Lunch </a>
-			 <a class="selected" style="margin-left: 275px;" href="/welcome/dinner"> Dinner </a>
-			 <a style="margin-left: 275px;" href="/welcome/drinks"> Drinks </a>
-			 <div class="menu_garnish one"> </div>
-			 <div class="menu_garnish two"> </div>
-			 <div class="menu_garnish three"> </div>
-			 <div class="menu_garnish four"> </div>
-
-			 <div class="menu_garnish six"> </div>
-			 <div class="menu_garnish seven"> </div>
-			 <div class="menu_garnish eight"> </div>
-			 <div class="menu_garnish nine"> </div>
-		</div>
-		</br class="clear">
-
-		<div class="download-menu"><a target="_blank" href="/Veneto_dinnermenu_7.28.14_a.pdf"><i class="fa fa-file-pdf-o"></i>&ensp;Download Veneto Dinner Menu </a></div>
+		<div class="bord_bot"><img src="/assets/bord_bot.png" /></div>
 	</div>
 
-	<div class="bord_bot"> </div>
+	<div class="row">
+		<div class="bord_top"><img src='/assets/bord_top.png' /></div>
+		<div class="bord_middle col-sm-12">
+			<div id="inner" class="col-sm-12">
+			</br>
 
-	<div class="bord_top"> </div>
+			<div class="col-sm-4">
+				<div class="perin">
+				<h2><%= @dperin.name %></h2>
+				<%= render @itemdp %>
+				</div>
 
-	<div class="bord_middle">
-		<div id="inner">
-		</br>
+				<div class="insalata">
+				<h2><%= @dinsal.name %></h2>
+				<%= render @itemdi %>	
+				</div>
 
-		<div id="left_col">
-			<div class="perin">
-			<h2><%= @dperin.name %></h2>
-			<%= render @itemdp %>
+				<div class="bevande">
+				<h2><%= @dbev.name %></h2>
+				<%= render @item_dbev %>
+				</div>
 			</div>
 
-			<div class="insalata">
-			<h2><%= @dinsal.name %></h2>
-			<%= render @itemdi %>	
+			<div class="col-sm-8">
+				<div class="wood">
+				<h2><%= @dpizza.name %></h2>
+				<%= render @itemdpizza %>	
+				</div>
+
+				<div class="pasta">
+				<h2><%= @dpasta.name %></h2>
+				<%= render @itemdpasta %>
+				</div>		
 			</div>
 
-			<div class="bevande">
-			<h2><%= @dbev.name %></h2>
-			<%= render @item_dbev %>
+			<div id="lunch_foot">
+				<strong>Ask your server for daily specials </strong></br>
+				Veneto uses only free-range, all natural chicken to ensure the highest quality product.
+			</div>
+			
+			</br class="clear">
 			</div>
 		</div>
-
-		<div id="right_col">
-			<div class="wood">
-			<h2><%= @dpizza.name %></h2>
-			<%= render @itemdpizza %>	
-			</div>
-
-			<div class="pasta">
-			<h2><%= @dpasta.name %></h2>
-			<%= render @itemdpasta %>
-			</div>		
-		</div>
-
-		<div id="lunch_foot">
-			<strong>Ask your server for daily specials </strong></br>
-			Veneto uses only free-range, all natural chicken to ensure the highest quality product.
-		</div>
-		
-		</br class="clear">
-		</div>
+		<div class="bord_bot"><img src="/assets/bord_bot.png" /></div>
 	</div>
-
-	<div class="bord_bot"> </div>
-
-
 </div>
