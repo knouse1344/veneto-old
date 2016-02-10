@@ -36,6 +36,8 @@ module Venetos
     # Enable the asset pipeline
     config.assets.enabled = true
 
+    require 'devise'
+
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
