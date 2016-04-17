@@ -5,30 +5,30 @@ class WelcomeController < ApplicationController
 
   def lunch
     @perin = Lunchsection.find(1)
-    @itemp = @perin.lunchitems.sort!
+    @itemp = @perin.lunchitems
     @insal = Lunchsection.find(2)
-    @itemi = @insal.lunchitems.sort!
+    @itemi = @insal.lunchitems
     @pizza = Lunchsection.find(3)
-    @item_pizza = @pizza.lunchitems.sort!
+    @item_pizza = @pizza.lunchitems
     @pasta = Lunchsection.find(4)
-    @item_pasta = @pasta.lunchitems.sort!
+    @item_pasta = @pasta.lunchitems
     @sand = Lunchsection.find(5)
-    @item_sand = @sand.lunchitems.sort!
+    @item_sand = @sand.lunchitems
     @bev = Lunchsection.find(6)
-    @item_bev = @bev.lunchitems.sort!
+    @item_bev = @bev.lunchitems
   end
 
   def dinner
     @dperin = Dinnersection.find(5)
-    @itemdp = @dperin.dinneritems.sort!
+    @itemdp = @dperin.dinneritems
     @dinsal = Dinnersection.find(6)
-    @itemdi = @dinsal.dinneritems.sort!
+    @itemdi = @dinsal.dinneritems
     @dpizza = Dinnersection.find(7)
-    @itemdpizza = @dpizza.dinneritems.sort!
+    @itemdpizza = @dpizza.dinneritems
     @dpasta = Dinnersection.find(8)
-    @itemdpasta = @dpasta.dinneritems.sort!
+    @itemdpasta = @dpasta.dinneritems
     @dbev = Dinnersection.find(9)
-    @item_dbev = @dbev.dinneritems.sort!
+    @item_dbev = @dbev.dinneritems
   end
 
   def drinks
