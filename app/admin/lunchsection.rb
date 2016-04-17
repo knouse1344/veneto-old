@@ -5,6 +5,6 @@ ActiveAdmin.register Lunchsection, :as => "Lunch Sections" do
     column :created_at
     column :updated_at
 
-    default_actions
+    actions
   end
 end

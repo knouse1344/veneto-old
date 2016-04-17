@@ -5,6 +5,6 @@ ActiveAdmin.register Dinnersection, :as => "Dinner Sections" do
     column :created_at
     column :updated_at
 
-    default_actions
+    actions
   end
 end

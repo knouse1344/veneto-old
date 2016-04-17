@@ -9,6 +9,6 @@ ActiveAdmin.register Lunchitem, :as => "Lunch Items" do
       number_to_currency item.price
     end
 
-    default_actions
+    actions
   end
 end

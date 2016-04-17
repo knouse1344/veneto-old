@@ -6,7 +6,7 @@ ActiveAdmin.register Hour do
     column "Saturday", :saturday
     column "Sunday", :sunday
 
-    default_actions
+    actions
   end
   
 end
